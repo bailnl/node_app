@@ -1,0 +1,12 @@
+function route(handle,req,res,pathname){
+	console.log("route a request for: " + pathname)
+	if(typeof handle[pathname] === 'function'){
+		return handle[pathname](req,res);
+	}else{
+		console.log("No Request Path----???????");
+		res.writeHead(200,{"Content-Type":"text/html"});
+		res.write("404 Not Found");
+		res.end();
+	}
+}
+exports.route = route;

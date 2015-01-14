@@ -1,0 +1,12 @@
+{
+    "name": "my-website",
+    "version": "0.0.1",
+    "description": "A simple web site based on connect",
+    "dependencies": {
+        "connect": "",
+        "serve-static": "",
+        "morgan": "" ,
+        "body-parser":"",
+        "connect-multiparty":""
+    }
+}
